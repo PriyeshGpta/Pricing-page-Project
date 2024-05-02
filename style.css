@@ -18,9 +18,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
     left: 120px;
-    top: 70px;
+    top: 50px;
     width: 1300px;
-    height: 600px;
+    height: 650px;
     background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
@@ -66,7 +66,7 @@ body{
 }
 
 input[type="checkbox"]:checked + .label:after{
-    translate: 1.5rem 0;
+    translate: 1.7rem 0;
 }
 
 input[type="checkbox"]:checked + .label{
@@ -85,15 +85,15 @@ input[type="checkbox"]{
 }
 
 .basic{
-    height: 300px;
+    height: 350px;
     width: 250px;
-    border: 2px solid green;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .professional{
-    height: 350px;
+    height: 400px;
     width: 300px;
-    border: 2px solid green;
     border-radius: 10px;
     background-color:hsl(234, 48%, 64%);
 }
@@ -103,16 +103,18 @@ input[type="checkbox"]{
 }
 
 .master{
-    height: 300px;
+    height: 350px;
     width: 250px;
-    border: 2px solid green;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .small-card{
     position: relative;
     top: 25px;
-    border-radius: 10px;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .price{
@@ -124,21 +126,54 @@ input[type="checkbox"]{
     margin-bottom: 10px;
 }
 
+.professional .card-heading{
+    position: relative;
+    top: 20px;
+}
+
 .professional h1{
     color: white;
+    position: relative;
+    top: 28px;
+}
+
+.professional .price{
+   position: relative;
+   left: 45px;
+}
+
+.professional .specs{
+    position: relative;
+    left: 85px;
+    margin: 10px;
 }
 
 .small-card button{
     position: absolute;
-    left: 25px;
+    left: 20px;
     color: white;
     background-color:hsl(234, 48%, 64%); 
-    width: 200px;
-    padding: 5px;
+    width: 210px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.professional button{
+    position: relative;
+    left: 22px;
+    background-color: white;
+    color:hsl(234, 48%, 64%); 
+    width: 255px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 60px;
+    cursor: pointer;
 }
 
 hr{
@@ -157,6 +192,16 @@ hr{
     position: relative;
     left: 100px;
     margin-top: 30px;
-    
 }
+
+.professional hr{
+    position: relative;
+    top: 25px;
+}
+
+.professional .specs{
+    position: relative;
+    top: 25px;
+}
+
 
